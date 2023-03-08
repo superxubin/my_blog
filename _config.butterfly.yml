@@ -3,7 +3,7 @@
 # --------------------------------------
 
 menu:
-  主页: / || fas fa-home
+  主页: / || iconfont icon-vscode || faa-tada
   历史: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-folder-open
@@ -17,6 +17,7 @@ nav:
   logo: # image
   display_title: true
   fixed: false # fixed navigation bar
+
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -40,9 +41,16 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  # fab fa-github: https://github.com/superxubin || Github
+  # fas fa-envelope: https://github.com/superxubin || Email
+  # iconfont icon-vscode: https://github.com/superxubin || vscode
+  # fa-brands fa-weixin : https://github.com/superxubin || 微信
 
+  微信: /assets/weixin.jpg || icon-weixin  ||  fa-bounce
+  QQ: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1763025095&website=www.oicqzone.com || icon-QQ || fa-bounce
+  知乎: https://www.zhihu.com/people/xu-bin-11-59 || icon-shejiaotubiao-46 || faa-tada
+  # QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
+  # 力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
 # --------------------------------------
@@ -94,7 +102,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: http://43.136.28.91:8899/imageFile/blog/185459.jpg
   effect: false
 
 # Disable all banner image
@@ -651,7 +659,7 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 今日事&#44;今日毕
+    - 今日事 | 今日毕
     - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
@@ -670,7 +678,7 @@ preloader:
 aside:
   enable: true
   hide: false
-  button: true
+  button: false
   mobile: true # display on mobile
   position: right # left or right
   display:
@@ -896,10 +904,10 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3936326_kz48beev4e.css">
   bottom:
   - <div class="aplayer no-destroy" data-id="unravel" data-server="netease" data-type="search" data-fixed="true" data-autoplay="false"> </div>
-    # - <script src="xxxx"></script>
+  - <script async src="//at.alicdn.com/t/c/font_3936326_kz48beev4e.js"></script> 
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -977,3 +985,19 @@ CDN:
     # artalk_js:
     # artalk_css:
     # busuanzi:
+
+    # tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    iconfont: //at.alicdn.com/t/c/font_3936326_kz48beev4e.js #参看https://akilar.top/posts/d2ebecef/
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
