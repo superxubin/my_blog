@@ -5733,17 +5733,17 @@ svg.icon {
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.4) 25%,
-    transparent 25%,
-    transparent 50%,
+    pink 25%,
+    pink 50%,
     rgba(255, 255, 255, 0.4) 50%,
     rgba(255, 255, 255, 0.4) 75%,
-    transparent 75%,
-    transparent
+    pink 75%,
+    pink
   );
   border-radius: 2em;
 }
 ::-webkit-scrollbar-corner {
-  background-color: transparent;
+  background-color: pink;
 }
 
 /* 切换main大小宽度 */
@@ -5764,16 +5764,18 @@ svg.icon {
     padding: 0 5px 0 5px;
   }
 }
-
-/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
-#archive,
-#page,
-#category,
-#tag {
-  width: 100%;
+/* 一级菜单居中 */
+/* #menus .menus_items{
+  position: absolute !important;
+  width: max-content!important;
+  top: 0;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+} */
+#nav #blog-info{
+  position: absolute;
 }
-
-.page:not(.page.home) .aside-content {
-  display: none;
+#menus{
+  font-size: 30px;
+  margin: 0 auto;
 }
-
