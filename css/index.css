@@ -2254,15 +2254,6 @@ pre[class*='language-'] pre > code.highlight {
 .apple #page-header.full_page {
   background-attachment: scroll !important;
 }
-.apple .recent-post-item,
-.apple .avatar-img,
-.apple .flink-item-icon {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
 #article-container .flink {
   margin-bottom: 20px;
 }
@@ -2938,23 +2929,24 @@ h1.page-title + .tag-cloud-list {
   width: 110px;
   height: 110px;
   border-radius: 70px;
+  cursor: pointer;
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  transform: rotateY(0); /* 添加这行代码 */
+}
+.avatar-img:hover {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .avatar-img img {
   width: 100%;
   height: 100%;
-  -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
-  -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
-  -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
-  -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
-  transition: filter 375ms ease-in 0.2s, transform 0.3s;
   object-fit: cover;
-}
-.avatar-img img:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 .site-data {
   display: table;
@@ -5719,31 +5711,8 @@ svg.icon {
 
 /* 滚动条样式 */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
   height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba(73, 177, 245, 0.2);
-  border-radius: 2em;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--theme-color);
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4) 25%,
-    pink 25%,
-    pink 50%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.4) 75%,
-    pink 75%,
-    pink
-  );
-  border-radius: 2em;
-}
-::-webkit-scrollbar-corner {
-  background-color: pink;
 }
 
 /* 切换main大小宽度 */
@@ -5765,17 +5734,17 @@ svg.icon {
   }
 }
 /* 一级菜单居中 */
-/* #menus .menus_items{
+#menus .menus_items{
   position: absolute !important;
   width: max-content!important;
   top: 0;
   left: 50% !important;
   transform: translateX(-50%) !important;
-} */
-#nav #blog-info{
-  position: absolute;
 }
 #menus{
   font-size: 30px;
-  margin: 0 auto;
+}
+#nav #blog-info .site-icon{
+  border-radius: 50%;
+  margin-right: 10px;
 }
