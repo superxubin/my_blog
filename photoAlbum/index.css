@@ -7,17 +7,17 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #787878;
     margin: 0 auto;
     padding: 5%;
     border: 1px solid #888;
     width:50vw;
     position: relative;
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .password-submit {
