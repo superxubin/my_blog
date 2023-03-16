@@ -201,8 +201,8 @@ top_img: https://images8.alphacoders.com/505/505616.png
        history.back()
     }
 
-    images.forEach((image, index) => {
-
+    function renderPicturer (){
+        images.forEach((image, index) => {
         var group = document.createElement('div');
         group.classList.add('item');
         var loading = document.createElement('div');
@@ -219,10 +219,7 @@ top_img: https://images8.alphacoders.com/505/505616.png
         var lastChild = waterfall.lastChild;
         lastChild.appendChild(img);
         lastChild.appendChild(loading);
-
-
     });
-
     // 获取所有图片元素
     var items = document.querySelectorAll('.item');
 
@@ -308,6 +305,11 @@ top_img: https://images8.alphacoders.com/505/505616.png
             }
         }, 10);
     }
+    }
+    
+
+
+    
 
    </script>
 
