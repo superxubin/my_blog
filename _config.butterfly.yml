@@ -3,9 +3,9 @@
 # --------------------------------------
 
 menu:
-  主页: / || iconfont icon-vscode || faa-tada
-  相册: /photoAlbum/ || fas faa-tada
-  # 历史: /archives/ || fas fa-archive
+  主页: / || faa-tada
+  相册: /photoAlbum/ || faa-tada
+  历史: /archives/ || faa-tada
   
   # Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
@@ -14,10 +14,10 @@ menu:
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
-nav:
-  logo: # image
+nav: 
+  logo: http://43.136.28.91:8899/imageFile/blog/avatar.jpg
   display_title: true
-  fixed: false # fixed navigation bar
+  fixed: true # fixed navigation bar
 
 
 # Code Blocks (代碼相關)
@@ -35,7 +35,7 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
@@ -48,7 +48,7 @@ social:
   # fa-brands fa-weixin : https://github.com/superxubin || 微信
 
   微信: /assets/weixin.jpg || icon-weixin  ||  fa-bounce
-  QQ: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1763025095&website=www.oicqzone.com || icon-QQ || fa-bounce
+  QQ: https://qm.qq.com/cgi-bin/qm/qr?k=oqGhEZuIBiHSVdmEDQS5Ui9P0R4U5Vxt&noverify=0&personal_qrcode_source=4 || icon-QQ || fa-bounce
   知乎: https://www.zhihu.com/people/xu-bin-11-59 || icon-shejiaotubiao-46 || faa-tada
   # QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
   # 力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
@@ -113,7 +113,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: /assets/topImg.jpg 
 
 # The banner image of archive page
 archive_img:
@@ -176,7 +176,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -398,11 +398,19 @@ artalk:
   option:
 
 # Chat Services
-# --------------------------------------
+# --------------------------------------asset_pipeline:
+asset_pipeline:
+  enable: true
+  autoprefixer:
+    enable: true
+    browsers:
+      - 'last 2 versions'
+  babel:
+    enable: true
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -416,8 +424,8 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: false
-  public_key:
+  enable: true
+  public_key: kct6kemyf7t2bvry8bf6wlyogjphh7y1
 
 # daovoice
 # http://dashboard.daovoice.io/app
@@ -449,7 +457,7 @@ messenger:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2023/3/10
   custom_text:
   copyright: true # Copyright of theme and framework
 
@@ -538,7 +546,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(/assets/topImg.jpg) 
 
 # Footer Background
 footer_bg: false
@@ -580,9 +588,9 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  shake: false #  open shake (抖動特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
@@ -613,10 +621,10 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon:  '\f0c1'
+  title-prefix-icon-color:  '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -665,7 +673,7 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -693,10 +701,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/superxubin
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: ''
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -732,13 +740,17 @@ aside:
 busuanzi:
   site_uv: true
   site_pv: true
-  page_pv: true
+  page_uv: true
+  # 51.la 访问量统计配置
+51la:
+  # 51.la 的统计代码，将其中的 12345678 替换为您自己的站点 ID
+  id: "254488"
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true 
+  publish_date: 3/12/2023 00:00:00  
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -753,7 +765,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -777,7 +789,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: true
+  autoChangeMode: false
 
 # show scroll percent in scroll-to-top button
 rightside_scroll_percent: true
@@ -850,8 +862,8 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
@@ -907,8 +919,10 @@ inject:
   head:
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3936326_kz48beev4e.css">
   bottom:
-  - <div class="aplayer no-destroy" data-id="numb little bug" data-server="netease" data-type="search" data-fixed="true" data-autoplay="false" data-volume='0.5' data-listmaxheight='26 0px'> </div>
+  - <div class="aplayer no-destroy" data-id="numb little bug" data-server="netease" data-lrctype='0' data-mini='true' data-type="search" data-fixed="true" data-autoplay="true" data-volume='0.5' data-listmaxheight='26 0px'> </div>
   - <script async src="//at.alicdn.com/t/c/font_3936326_kz48beev4e.js"></script> 
+  - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+  - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
 
 # CDN
 # Don't modify the following settings unless you know how they work

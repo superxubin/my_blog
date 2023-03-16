@@ -12,7 +12,9 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "butterfly": "^0.0.1",
     "hexo": "^6.3.0",
+    "hexo-butterfly-article-double-row": "^1.0.2",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
@@ -26,6 +28,8 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-butterfly": "^4.7.0",
-    "hexo-theme-landscape": "^0.0.3"
+    "hexo-theme-landscape": "^0.0.3",
+    "hexo-wordcount": "^6.0.1",
+    "vue": "^3.2.47"
   }
 }

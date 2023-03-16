@@ -67,6 +67,14 @@ index_generator:
   per_page: 10
   order_by: -date
 
+asset_pipeline:
+  enable: true
+  autoprefixer:
+    enable: true
+    browsers:
+      - 'last 2 versions'
+  babel:
+    enable: true
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -96,6 +104,10 @@ include:
 exclude:
 ignore:
 
+# 双栏布局的插件
+butterfly_article_double_row:
+  enable: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -111,3 +123,7 @@ deploy:
 aplayer:
   meting: true
   asset_inject: false
+  lrcType: 0
+  volume: 0.5
+  fixed: false
+  mini: true 
