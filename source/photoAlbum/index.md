@@ -5,7 +5,6 @@ aside: false
 top_img: http://43.136.28.91:8899/imageFile/blog/good.jpg
 ---
 <div class="gallery-group-main">
-{% galleryGroup '打开夜间模式有更好看的' '献出心脏塔塔开！！！' 'photoAlbum/girl' https://images5.alphacoders.com/607/607878.jpg %}
 {% galleryGroup '壁纸' '献出心脏塔塔开！！！' 'photoAlbum/girl' https://images8.alphacoders.com/505/505616.png %}
 {% galleryGroup '风景' '保留样式暂存' 'photoAlbum/scenery' https://images7.alphacoders.com/130/1306240.jpg %}
 {% galleryGroup '坤了' '困了希望看到的' 'photoAlbum/privateAlbum' http://43.136.28.91:8899/imageFile/sese/immortal/no.jpg %}
@@ -14,7 +13,7 @@ top_img: http://43.136.28.91:8899/imageFile/blog/good.jpg
 
 <script>
         // 获取第二个 .gallery-group 元素
-        var galleryGroup = document.querySelectorAll('.gallery-group')[3];
+        var galleryGroup = document.querySelectorAll('.gallery-group')[2];
         
         // 判断是否需要显示图册
         if (document.documentElement.getAttribute('data-theme') === 'dark') {

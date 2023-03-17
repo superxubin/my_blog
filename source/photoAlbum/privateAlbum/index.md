@@ -126,6 +126,8 @@ top_img: https://images8.alphacoders.com/505/505616.png
         }
         }
 
+       
+
     </style>
 
  <div id="private-page">
@@ -138,65 +140,96 @@ top_img: https://images8.alphacoders.com/505/505616.png
 
   <script >
     var waterfall = document.getElementById('waterfall');
-    var imgUrl = 'http://43.136.28.91:8899/imageFile/sese/immortal/';
-    var imgUrl2 = 'http://43.136.28.91:8899/imageFile/sese/ai/';
+    // var imgUrl = 'http://43.136.28.91:8899/imageFile/sese/immortal/';
+    // var imgUrl2 = 'http://43.136.28.91:8899/imageFile/sese/ai/';
 
-    var images = [
-        { url: imgUrl + '1 (14).jpg', alt: 'Image 1' },
-        { url: imgUrl + '1 (15).jpg', alt: 'Image 2' },
-        { url: imgUrl + '1 (16).jpg', alt: 'Image 2' },
-        { url: imgUrl + '1 (17).jpg', alt: 'Image 3' },
-        { url: imgUrl + '1 (18).jpg', alt: 'Image 4' },
-        { url: imgUrl + '1 (19).jpg', alt: 'Image 6' },
-        { url: imgUrl + '1 (20).jpg', alt: 'Image 7' },
-        { url: imgUrl + '1 (21).jpg', alt: 'Image 8' },
-        { url: imgUrl + '1 (22).jpg', alt: 'Image 9' },
-        { url: imgUrl + '1 (23).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (24).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (25).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (26).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (27).jpg', alt: 'Image 7' },
-        { url: imgUrl + '1 (28).jpg', alt: 'Image 8' },
-        { url: imgUrl + '1 (29).jpg', alt: 'Image 9' },
-        { url: imgUrl + '1 (30).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (31).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (32).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (33).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (34).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (35).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (36).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (37).jpg', alt: 'Image 10' },
+    // var images = [
+    //     { url: imgUrl + '1 (14).jpg', alt: 'Image 1' },
+    //     { url: imgUrl + '1 (15).jpg', alt: 'Image 2' },
+    //     { url: imgUrl + '1 (16).jpg', alt: 'Image 2' },
+    //     { url: imgUrl + '1 (17).jpg', alt: 'Image 3' },
+    //     { url: imgUrl + '1 (18).jpg', alt: 'Image 4' },
+    //     { url: imgUrl + '1 (19).jpg', alt: 'Image 6' },
+    //     { url: imgUrl + '1 (20).jpg', alt: 'Image 7' },
+    //     { url: imgUrl + '1 (21).jpg', alt: 'Image 8' },
+    //     { url: imgUrl + '1 (22).jpg', alt: 'Image 9' },
+    //     { url: imgUrl + '1 (23).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (24).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (25).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (26).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (27).jpg', alt: 'Image 7' },
+    //     { url: imgUrl + '1 (28).jpg', alt: 'Image 8' },
+    //     { url: imgUrl + '1 (29).jpg', alt: 'Image 9' },
+    //     { url: imgUrl + '1 (30).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (31).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (32).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (33).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (34).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (35).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (36).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (37).jpg', alt: 'Image 10' },
 
-        { url: imgUrl + '1 (1).jpg', alt: 'Image 1' },
-        { url: imgUrl + '1 (2).jpg', alt: 'Image 2' },
-        { url: imgUrl + '1 (3).jpg', alt: 'Image 2' },
-        { url: imgUrl + '1 (4).jpg', alt: 'Image 3' },
-        { url: imgUrl + '1 (5).jpg', alt: 'Image 4' },
-        { url: imgUrl + '1 (6).jpg', alt: 'Image 6' },
-        { url: imgUrl + '1 (7).jpg', alt: 'Image 7' },
-        { url: imgUrl + '1 (8).jpg', alt: 'Image 8' },
-        { url: imgUrl + '1 (9).jpg', alt: 'Image 9' },
-        { url: imgUrl + '1 (10).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (11).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (12).jpg', alt: 'Image 10' },
-        { url: imgUrl + '1 (13).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (1).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (2).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (3).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (4).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (5).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (6).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (7).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (8).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (9).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (10).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (11).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (12).jpg', alt: 'Image 10' },
-        { url: imgUrl2 + '1 (13).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (1).jpg', alt: 'Image 1' },
+    //     { url: imgUrl + '1 (2).jpg', alt: 'Image 2' },
+    //     { url: imgUrl + '1 (3).jpg', alt: 'Image 2' },
+    //     { url: imgUrl + '1 (4).jpg', alt: 'Image 3' },
+    //     { url: imgUrl + '1 (5).jpg', alt: 'Image 4' },
+    //     { url: imgUrl + '1 (6).jpg', alt: 'Image 6' },
+    //     { url: imgUrl + '1 (7).jpg', alt: 'Image 7' },
+    //     { url: imgUrl + '1 (8).jpg', alt: 'Image 8' },
+    //     { url: imgUrl + '1 (9).jpg', alt: 'Image 9' },
+    //     { url: imgUrl + '1 (10).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (11).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (12).jpg', alt: 'Image 10' },
+    //     { url: imgUrl + '1 (13).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (1).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (2).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (3).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (4).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (5).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (6).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (7).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (8).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (9).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (10).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (11).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (12).jpg', alt: 'Image 10' },
+    //     { url: imgUrl2 + '1 (13).jpg', alt: 'Image 10' },
 
-        // { url: imgUrl + '197924.jpg', alt: 'Image 10' },
-        // { url: imgUrl + '197924.jpg', alt: 'Image 10' }
-    ];
+    //     // { url: imgUrl + '197924.jpg', alt: 'Image 10' },
+    //     // { url: imgUrl + '197924.jpg', alt: 'Image 10' }
+    // ];
+
+
+     var imgUrl = 'http://43.136.28.91:8899/imageFile/blog/';
+     var images = [
+            { url: imgUrl + 'avatar.jpg', alt: 'Image 1' },
+            { url: imgUrl + '07753-2023021614112679faa40310b4813f72741f5a9521934bd5d3f132.jpg', alt: 'Image 2' },
+            { url: imgUrl + '201608.jpg', alt: 'Image 2' },
+            { url: imgUrl + '185460.jpg', alt: 'Image 3' },
+            { url: imgUrl + '197924.jpg', alt: 'Image 4' },
+            { url: imgUrl + '169312.jpg', alt: 'Image 6' },
+            { url: imgUrl + '173273.jpg', alt: 'Image 7' },
+            { url: imgUrl + '198378.jpg', alt: 'Image 8' },
+            { url: imgUrl + '215137.jpg', alt: 'Image 9' },
+            { url: imgUrl + '212134.jpg', alt: 'Image 10' },
+            { url: imgUrl + '212136.jpg', alt: 'Image 10' },
+            { url: imgUrl + '212132.jpg', alt: 'Image 10' },
+            { url: imgUrl + '212131.jpg', alt: 'Image 10' },
+            { url: imgUrl + '212138.jpg', alt: 'Image 10' },
+            { url: imgUrl + '169310.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215131.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215133.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215134.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215135.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215157.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215136.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215170.jpg', alt: 'Image 10' },
+            { url: imgUrl + '215422.jpg', alt: 'Image 10' },
+             { url: imgUrl + '215423.jpg', alt: 'Image 10' },
+
+            { url: 'https://s1.ax1x.com/2023/03/10/ppu9IFP.jpg', alt: 'Image 10' },
+            ]
     function back() {
        history.back()
     }
