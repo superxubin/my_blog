@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
     switchDarkMode: () => { // Switch Between Light And Dark Mode
       const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
      //在切换主题里加上判断私密图册显示
-      var galleryGroup = document.querySelectorAll('.gallery-group')[3];
+      var galleryGroup = document.querySelectorAll('.gallery-group')[2];
       if(galleryGroup){
         if(nowMode === 'light'){
           galleryGroup.style.display = 'block';
