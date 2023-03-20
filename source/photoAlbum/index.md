@@ -7,9 +7,8 @@ top_img: http://43.136.28.91:8899/imageFile/blog/good.jpg
 <div class="gallery-group-main">
 {% galleryGroup '壁纸' '献出心脏塔塔开！！！' 'photoAlbum/girl' https://images8.alphacoders.com/505/505616.png %}
 {% galleryGroup '风景' '保留样式暂存' 'photoAlbum/scenery' https://images7.alphacoders.com/130/1306240.jpg %}
-{% galleryGroup '坤了' '困了希望看到的' 'photoAlbum/privateAlbum' //43.136.28.91:8899/imageFile/sese/immortal/no.jpg %}
+{% galleryGroup '坤了' '困了希望看到的' 'photoAlbum/privateAlbum' https://s2.loli.net/2023/03/20/tnIyl2D9LiHPmrX.jpg %}
 </div>
-
 
 <script>
         // 获取第二个 .gallery-group 元素

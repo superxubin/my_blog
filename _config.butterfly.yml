@@ -207,9 +207,9 @@ anchor:
 toc:
   post: true
   page: false
-  number: true
+  number: false
   expand: false
-  style_simple: false # for post
+  style_simple: true # for post
   scroll_percent: true
 
 post_copyright:
@@ -412,7 +412,7 @@ asset_pipeline:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: false
@@ -625,7 +625,7 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon:  '\f0c1'
+  title-prefix-icon:  '\f863'
   title-prefix-icon-color:  '#F47466'
 
 # Global font settings
@@ -882,10 +882,10 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline

@@ -1,45 +1,39 @@
 ---
 
-title: Hello World
+title: 前端入门
 date: 2023-03-06 17:23:45
 cover: https://images5.alphacoders.com/607/607878.jpg
 sticky: 1
+mathjax: true
 top_img: false
+swiper_index: 2
 tags: '前端三部曲'
 categories: '前端'
+
+copyright: false
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+ **入门**：前端指的是网站或应用程序的用户界面部分，也被称为客户端。它是与用户直接交互的部分，包括网页设计、网页制作、交互设计、网站建设、前端开发等等。
 
-## Quick Start
+前端开发主要使用HTML、CSS、JavaScript等技术，其中HTML用于定义页面内容结构，CSS用于定义页面样式，JavaScript用于实现页面的交互效果和动态效果。
 
-### Create a new post
+##  HTML
 
-``` bash
-$ hexo new "My New Post"
-```
+### HTML 指的是超文本标记语言 (Hyper Text Markup Language) www万维网的描述性语言
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+> HTML5指的是HTML的第五次重大修改（第5个版本）
 
-### Run server
+> XHTML指可扩展超文本标记语言（标识语言）（EXtensible HyperText Markup Language）是一种置标语言，表现方式与超文本标记语言（HTML）类似，不过语法上更加严格。
 
-``` bash
-$ hexo server
-```
+### HTML 标签
 
-More info: [Server](https://hexo.io/docs/server.html)
+菜鸟教程Html入门: [标签](https://www.runoob.com/html/html-intro.html)
 
-### Generate static files
+### CSS
 
-``` bash
-$ hexo generate
-```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
 
-``` bash
-$ hexo deploy
-```
+### JS
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+### 总结
+
