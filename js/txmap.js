@@ -61,7 +61,7 @@ function showWelcome() {
             break;
         case "中国":
             pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city + " " + ipLoacation.result.ad_info.district;
-            ip = ipLoacation.result.ip;
+
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
                     posdesc = "北——京——欢迎你~~~";
@@ -200,6 +200,8 @@ function showWelcome() {
             posdesc = "带我去你的国家逛逛吧。";
             break;
     }
+
+    ip = ipLoacation.result.ip;
 
     //根据本地时间切换欢迎语
     let timeChange;
