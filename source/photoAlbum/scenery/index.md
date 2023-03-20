@@ -80,36 +80,37 @@ top_img: https://images7.alphacoders.com/130/1306240.jpg
 
  <script>
 
-   var imgUrl = 'http://43.136.28.91:8899/imageFile/blog/';
+//    var imgUrl = '//43.136.28.91:8899/imageFile/blog/';
+    var imgUrl = 'https://s1.ax1x.com/2023/03/20/';
     var images = [
-            imgUrl + '201608.jpg', 
-            imgUrl + '185460.jpg', 
-            imgUrl + '197924.jpg', 
-            imgUrl + '169312.jpg', 
-            imgUrl + '173273.jpg',
-            imgUrl + '215137.jpg', 
-            imgUrl + '212136.jpg', 
-            imgUrl + '212132.jpg', 
-            imgUrl + '212132.jpg', 
-            imgUrl + '212138.jpg', 
-            imgUrl + '212138.jpg', 
-            imgUrl + '215133.jpg',
-            imgUrl + '215136.jpg', 
+            imgUrl + 'ppNiFm9.jpg', 
+            imgUrl + 'ppNiPOJ.jpg', 
+            imgUrl + 'ppNiCy4.jpg', 
+            imgUrl + 'ppNi9lF.png', 
+            imgUrl + 'ppNipSU.png',
+            imgUrl + 'ppNPzWT.png', 
+            imgUrl + 'ppNPxYV.png', 
+            imgUrl + 'ppNPvF0.jpg', 
+            imgUrl + 'ppNPXoq.png', 
+            imgUrl + 'ppNPOwn.jpg', 
+            imgUrl + 'ppNPbLj.jpg', 
+            imgUrl + 'ppNPLes.png',
+            imgUrl + 'ppNPHyQ.png', 
 ];
  var images2 = [
-            imgUrl + '212136.jpg', 
-            imgUrl + '212132.jpg', 
-            imgUrl + '212132.jpg', 
-            imgUrl + '212138.jpg', 
-            imgUrl + '212138.jpg',
-            imgUrl + '215133.jpg', 
-            imgUrl + '215136.jpg', 
-            imgUrl + '201608.jpg', 
-            imgUrl + '185460.jpg', 
-            imgUrl + '197924.jpg', 
-            imgUrl + '169312.jpg', 
-            imgUrl + '173273.jpg',
-            imgUrl + '215137.jpg', 
+            imgUrl + 'ppNiFm9.jpg', 
+            imgUrl + 'ppNiPOJ.jpg', 
+            imgUrl + 'ppNiCy4.jpg', 
+            imgUrl + 'ppNi9lF.png', 
+            imgUrl + 'ppNipSU.png',
+            imgUrl + 'ppNPzWT.png', 
+            imgUrl + 'ppNPxYV.png', 
+            imgUrl + 'ppNPvF0.jpg', 
+            imgUrl + 'ppNPXoq.png', 
+            imgUrl + 'ppNPOwn.jpg', 
+            imgUrl + 'ppNPbLj.jpg', 
+            imgUrl + 'ppNPLes.png',
+            imgUrl + 'ppNPHyQ.png', 
 
 ];
     var carouselWrapper = document.querySelector('.carousel-wrapper');

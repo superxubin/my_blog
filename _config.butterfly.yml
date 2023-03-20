@@ -5,17 +5,19 @@
 menu:
   主页: / || faa-tada
   相册: /photoAlbum/ || faa-tada
-  历史: /archives/ || faa-tada
-  
-  # Categories: /categories/ || fas fa-folder-open
+  文章 || faa-tada || hide:
+    历史: /archives/ || faa-tada
+    分类: /categories/ || faa-tada
+    标签: /tags/ || faa-tada
+
   # List||fas fa-list:
   # Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  # Movie: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
 nav: 
-  logo: http://43.136.28.91:8899/imageFile/blog/avatar.jpg
+  logo: https://cdn.staticaly.com/gh/superxubin/PictureLibrary/main/blog/avatar.jpg
   display_title: true
   fixed: true # fixed navigation bar
 
@@ -99,7 +101,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/gua.svg
 
 # Avatar (頭像)
 avatar:
@@ -430,7 +432,7 @@ tidio:
 # daovoice
 # http://dashboard.daovoice.io/app
 daovoice:
-  enable: true
+  enable: false
   app_id: 28e8f00c
 
 # gitter

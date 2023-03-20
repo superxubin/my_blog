@@ -6,7 +6,7 @@
 title: 斌宝🍉
 # 主页subtitle
 subtitle: 斌宝
-description: 'hero🍉'
+description: 'hero'
 keywords:
 author: 斌宝大大🍉
 language: zh-CN
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://localhost:4000
+url: https://blog.xubin.tech/
 permalink: /post/:title.html
 permalink_defaults:
 pretty_urls:
@@ -118,7 +118,7 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/superxubin/my_blog
-  branch: gh-pages
+  branch: master
  
 aplayer:
   meting: true
