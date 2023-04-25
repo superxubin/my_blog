@@ -134,50 +134,48 @@ top_img: https://images8.alphacoders.com/505/505616.png
  <script>
 
 
+
+
+
         var waterfall = document.getElementById('waterfall');
-        //  var imgUrl = '//43.136.28.91:8899/imageFile/blog/';
-         var imgUrl = 'https://s1.ax1x.com/2023/03/20/';
+        //  var imgUrl = 'https://s2.loli.net/2023/03/21/';
+         var imgUrl = 'https://cdn.staticaly.com/gh/superxubin/PictureLibrary/main/blog/';
+         
+// cdn.staticaly.com
+        var images = [
+        //     { url: imgUrl + 'KhZXr7V3pJt2qC1.jpg', alt: 'Image 9' },
+        //     { url: imgUrl + 'b2XLR1HhiaNVMAx.jpg', alt: 'Image 1' },
+        //     { url: imgUrl + 'LPGfd6jOAVpvDJZ.jpg', alt: 'Image 2' },
+        //     { url: imgUrl + 'nkx4d7j3qyFKtUQ.jpg', alt: 'Image 6' },
+        //     { url: imgUrl + 'cgTfvIrjK9yAXpP.jpg', alt: 'Image 7' },
+        //     { url: imgUrl + 'UKvtW2sAz14ON6F.png', alt: 'Image 8' },
+        //     { url: imgUrl + 'CcAPZgdpNzMVYRE.png', alt: 'Image 9' },
+        //     { url: imgUrl + 'RCMQIZyAHb74dpt.jpg', alt: 'Image 10' },
+        //     { url: imgUrl + 'LB7IzeqRiOg3JXb.png', alt: 'Image 10' },
+        //     { url: imgUrl + 'KqlLWDYzu1eb4OX.jpg', alt: 'Image 1' },
+        //     { url: imgUrl + 'SlsV4I7MYfrxQXU.jpg', alt: 'Image 2' },
+        //     { url: imgUrl + 'GpPxNaC5FQuAdUL.jpg', alt: 'Image 2' },
+        //     { url: imgUrl + 'hCk8zegcuAiym9w.jpg', alt: 'Image 6' },
+        //     { url: imgUrl + 'DGvXnuJxCeBUgw4.png', alt: 'Image 7' },
 
-
-
-        
-    var images = [
-            { url: imgUrl + 'ppNiFm9.jpg', alt: 'Image 1' },
-            { url: imgUrl + 'ppNiPOJ.jpg', alt: 'Image 2' },
-            { url: imgUrl + 'ppNiCy4.jpg', alt: 'Image 2' },
-            { url: imgUrl + 'ppNi9lF.png', alt: 'Image 3' },
-            { url: imgUrl + 'ppNipSU.png', alt: 'Image 4' },
-            { url: imgUrl + 'ppNPzWT.png', alt: 'Image 6' },
-            { url: imgUrl + 'ppNPxYV.png', alt: 'Image 7' },
-            { url: imgUrl + 'ppNPvF0.jpg', alt: 'Image 8' },
-            { url: imgUrl + 'ppNPXoq.png', alt: 'Image 9' },
-            { url: imgUrl + 'ppNPOwn.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPLes.png', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPbLj.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPHyQ.png', alt: 'Image 10' },
-            { url: imgUrl + 'ppNP7Qg.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPTSS.jpg', alt: 'Image 10' },
-            { url: 'https://s1.ax1x.com/2023/03/10/ppu9IFP.jpg', alt: 'Image 10' },
-                { url: imgUrl + 'ppNiFm9.jpg', alt: 'Image 1' },
-            { url: imgUrl + 'ppNiPOJ.jpg', alt: 'Image 2' },
-            { url: imgUrl + 'ppNiCy4.jpg', alt: 'Image 2' },
-            { url: imgUrl + 'ppNi9lF.png', alt: 'Image 3' },
-            { url: imgUrl + 'ppNipSU.png', alt: 'Image 4' },
-            { url: imgUrl + 'ppNPzWT.png', alt: 'Image 6' },
-            { url: imgUrl + 'ppNPxYV.png', alt: 'Image 7' },
-            { url: imgUrl + 'ppNPvF0.jpg', alt: 'Image 8' },
-            { url: imgUrl + 'ppNPXoq.png', alt: 'Image 9' },
-            { url: imgUrl + 'ppNPOwn.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPLes.png', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPbLj.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPHyQ.png', alt: 'Image 10' },
-            { url: imgUrl + 'ppNP7Qg.jpg', alt: 'Image 10' },
-            { url: imgUrl + 'ppNPTSS.jpg', alt: 'Image 10' },
-            { url: 'https://s1.ax1x.com/2023/03/10/ppu9IFP.jpg', alt: 'Image 10' },
+              { url: imgUrl + '201608.jpg', alt: 'Image 9' },
+            { url: imgUrl + '215137.jpg', alt: 'Image 1' },
+            { url: imgUrl + '212138.jpg', alt: 'Image 2' },
+            { url: imgUrl + '212136.jpg', alt: 'Image 6' },
+            { url: imgUrl + '212132.jpg', alt: 'Image 7' },
+            { url: imgUrl + '212131.jpg', alt: 'Image 8' },
+            { url: imgUrl + '201608.jpg', alt: 'Image 9' },
+            { url: imgUrl + '198378.jpg', alt: 'Image 10' },
+            { url: imgUrl + '173273.jpg', alt: 'Image 10' },
+            { url: imgUrl + '185460.jpg', alt: 'Image 1' },
+            { url: imgUrl + '169312.jpg', alt: 'Image 2' },
+            { url: imgUrl + '169310.jpg', alt: 'Image 2' },
+            { url: imgUrl + '07753-2023021614112679faa40310b4813f72741f5a9521934bd5d3f132.jpg', alt: 'Image 6' },
+            { url: imgUrl + 'avatar.jpg', alt: 'Image 7' },
         ];
-    function back(){
-       history.back();
-    }
+            function back(){
+            history.back();
+            }
 
 
     images.forEach((image, index) => {
@@ -225,8 +223,8 @@ top_img: https://images8.alphacoders.com/505/505616.png
 
         // 默认显示第一页
         showPage(1);
-              var aList = document.querySelectorAll('.aClick');
-                 aList[0].classList.add('aColor');
+        var aList = document.querySelectorAll('.aClick');
+        aList[0].classList.add('aColor');
         // 添加点击事件监听器
         pagination.addEventListener('click', e => {
             var aList = document.querySelectorAll('.aClick');
